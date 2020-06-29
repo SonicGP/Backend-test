@@ -1,0 +1,34 @@
+﻿@model WebApplication6.Models.controleProduto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>controleProduto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto.nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.controleProdutoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
